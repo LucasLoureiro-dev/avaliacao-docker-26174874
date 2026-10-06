@@ -1,0 +1,10 @@
+FROM nginx:1.30.5
+
+WORKDIR /usr/share/nginx/html
+
+COPY ./html .
+
+EXPOSE 80
+
+LABEL   "nome"="Lucas Loureiro" \
+        "matricula"="26174874"
