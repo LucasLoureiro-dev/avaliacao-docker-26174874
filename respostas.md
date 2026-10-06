@@ -45,13 +45,41 @@ do que texto longo copiado. Resposta que contradiz o seu próprio Dockerfile val
 ## Parte 4 · Primeiro docker-compose
 
 7. Escreva os dois comandos `docker run` que fariam o mesmo que o seu `docker-compose.yml`.
+   manutencao docker run -d --name manut -p 7074:80 manutencao:2617487
+   portal docker run -d --name teste-portal -p 8074:80 lucasloureirodev/viaserra-portal:1.0-2617487
 
 8. Qual comando derruba os dois containers de uma vez?
+   docker compose stop
 
 ## Verificador
 
 9. Código de conclusão impresso pelo verificador:
 
 ```
-(cole aqui)
+================================================================
+ Verificador · Avaliação Prática de Docker · Turma C
+================================================================
+ Matrícula 26174874 · portal 8074 · manutenção 7074
+
+A. Arquivos e Git
+[ OK ] A1 portal/Dockerfile segue os requisitos
+[ OK ] A2 .env fora do Git e .env.example versionado
+[ OK ] A3 4+ commits e remoto no GitHub (encontrados: 6)
+[ OK ] A4 imagem lucasloureirodev/viaserra-portal:1.0-26174874 pública no Docker Hub
+
+B. docker compose
+         (ainda há lacunas ____ no docker-compose.yml)
+[ OK ] B1 serviços portal e manutencao em execução
+[ OK ] B2 portal roda a imagem publicada
+[ OK ] B3 portas: portal em 8074 e manutenção em 7074
+
+C. Conteúdo
+[ OK ] C1 portal mostra seu nome e sua matrícula
+[ OK ] C2 página de manutenção servindo o aviso "Voltamos em breve"
+
+================================================================
+ Resultado: 9/9 verificações
+ Código de conclusão: VIASERRA-26174874-1FDC1C57
+ Copie o código para o respostas.md, tire o print desta tela e faça o commit final.
+================================================================
 ```
